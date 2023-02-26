@@ -8,13 +8,16 @@
     "test": "test"
   },
   "dependencies": {
-    "electron": "^1.4.10"
+    "electron": "^20.3.10",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "tape": "^4.6.3"
   },
   "scripts": {
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,5 +28,6 @@
   "bugs": {
     "url": "https://github.com/0x00A/node-chrome/issues"
   },
-  "homepage": "https://github.com/0x00A/node-chrome#readme"
+  "homepage": "https://github.com/0x00A/node-chrome#readme",
+  "snyk": true
 }
