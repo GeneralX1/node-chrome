@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "electron": "^22.0.0",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.1110.0"
   },
   "devDependencies": {
     "tape": "^4.6.3"
